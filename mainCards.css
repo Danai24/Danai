@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.headEevent{
+    margin: 1rem;
+    padding: 1rem;
+    text-align: center;
+}
+
+h2{
+    padding-bottom: 1em;
+}
+
+.cardeImg{
+    width: 400px;
+    height: 267px;
+}
+
+.containerCards{
+    margin: 1rem;
+    padding: 4em;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: space-between;
+    gap: 10px;
+    text-align: center;
+    align-items: center;
+}
+
+.cards{
+    background-color: #B8BFC6;
+    text-align: center;
+    width: 400px;
+    margin: 1rem;
+}
