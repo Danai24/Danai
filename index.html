@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="./java.js" defer></script>
+    <script src="./tak.js" defer></script>
 </head>
 <body>
     <header class="header">
@@ -53,7 +54,7 @@
         
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore non iste asperiores earum praesentium perferendis!</p>
         
-                <button>Læs mere</button>
+                <button class="readMore">Læs mere</button>
             </article>
 
             <article class="cards">
@@ -63,7 +64,7 @@
         
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore non iste asperiores earum praesentium perferendis!</p>
                 
-                <button>Læs mere</button>
+                <button class="readMore">Læs mere</button>
             </article>
             
             <article class="cards">
@@ -73,7 +74,7 @@
         
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore non iste asperiores earum praesentium perferendis!</p>
                 
-                <button>Læs mere</button>
+                <button class="readMore">Læs mere</button>
             </article>
 
             <article class="cards">
@@ -83,7 +84,7 @@
         
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore non iste asperiores earum praesentium perferendis!</p>
         
-                <button>Læs mere</button>
+                <button class="readMore">Læs mere</button>
             </article>
             
             <article class="cards">
@@ -93,7 +94,7 @@
                 
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore non iste asperiores earum praesentium perferendis!</p>
                 
-                <button>Læs mere</button>
+                <button class="readMore">Læs mere</button>
             </article>
 
             <article class="cards">
@@ -103,7 +104,7 @@
         
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore non iste asperiores earum praesentium perferendis!</p>
                 
-                <button>Læs mere</button>
+                <button class="readMore">Læs mere</button>
             </article>
 
         </div>
@@ -117,27 +118,50 @@
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum ducimus, dolor veniam illum, ea repellat ipsum accusamus nam aliquid libero tempora amet quas odio?</p>
 
             <div class="adresse">
-                <h5>Adresse</h5>
                 <i class="fa-sharp fa-solid fa-location-dot"></i>
+                 <h5>Adresse</h5>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
             </div>
 
             <div class="phone">
-                <h5>Ring til os på</h5>
                 <i class="fa-solid fa-phone"></i>
+                <h5>Ring til os på</h5>
                 <p>+45 55281928</p>
             </div>
             
             <div class="email">
-                <h5>Skrive til os på</h5>
                 <i class="fa-solid fa-envelope"></i>
+                <h5>Skrive til os på</h5>
                 <p>email1234@gmail.com</p>
             </div>
         </div>
 
-        <div class="send">
-            <h6>Send os en besked</h6>
-        </div>
+        <!-- kontakt form -->
+        <form action="./tak.html" class="contactForm" novalidate>
+            <h6>Send en besked</h6>
+
+			<div class="inputField">
+				<label class="inputField__label">
+					<input type="text" class="inputField__input" placeholder="Skrive din navn her" name="name" required>
+				</label>
+				<span class="inputField__feedback"></span>
+			</div>
+
+			<div class="inputField">
+				<label class="inputField__label">
+					<input type="email" class="inputField__input" placeholder="Skrive din email her" name="email" required>
+				</label>
+				<span class="inputField__feedback"></span>
+			</div>
+
+			<div class="inputField">
+				<label class="inputField__label">
+					<textarea class="inputField__text" placeholder="Skrive besked til os her" name="message"></textarea>
+				</label>
+				<span class="inputField__feedback"></span>
+			</div>
+			<button type="submit" class="submit__button"> <i class="fa-solid fa-envelope"></i> Send besked </button>
+		</form>
     </footer>
 </body>
 </html>

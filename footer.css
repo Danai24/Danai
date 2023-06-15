@@ -1,13 +1,56 @@
-/* *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-} */
+.footer{
+    display: flex;
+    flex-direction: row;
+    /* background-color: #1E293B; */
+    background-color: #262F38;
+}
 
 .kontakt{
     width: 50%;
+    margin: 1rem;
+    padding: 1rem;
+    color: white;
 }
 
+.adresse, .phone, .email{
+    margin-top: 1rem;
+}
+
+i{
+    display: inline-block;
+}
+
+
+.contactForm{
+    width: 50%;
+    margin: 1rem;
+    padding: 1rem;
+    text-align: center;
+    background-color: #3B4C5C;
+}
+
+.inputField__input, .submit__button{
+    width: 250px;
+    height: 30px;
+    margin: 2px;
+    color: white;
+    background-color: #3B4C5C;
+}
+
+.inputField__text{
+    width: 250px;
+    height: 100px;
+    color: white;
+    margin: 2px;
+    background-color: #3B4C5C;
+}
+
+
+
+h6, h4{
+    font-size: large;
+    color: white;
+}
 
 
 

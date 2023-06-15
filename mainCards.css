@@ -31,8 +31,22 @@ h2{
 }
 
 .cards{
-    background-color: #B8BFC6;
+    background-color: #F3F4F5;
     text-align: center;
     width: 400px;
     margin: 1rem;
+}
+
+.readMore{
+    margin: 1rem;
+    width: 80px;
+    height: 30px;
+    color: red;
+    background: none;
+    border: solid 3px red;
+}
+
+.readMore:hover{
+    background-color: red;
+    color: white;
 }
