@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Danai</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="./java.js" defer></script>
+    <script src="./tak.js" defer></script>
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <img src="./biller/Logo.png" alt="" class="">            
+        </div>
+
+    <ul class="link-list">
+        <a href=""><li>Forside</li></a>
+        <a href=""><li>Fester</li></a>
+        <a href=""><li>Firma events</li></a>
+        <a href=""><li>Kontakt</li></a>
+    </ul>
+    </header>
+
+    <div class="wrapper">
+        <div class="prev">&lt;</i></div>
+  
+        <div class="slides-container">
+          <div class="slide-image">
+            <img src="https://images.pexels.com/photos/1408214/pexels-photo-1408214.jpeg?auto=compress&cs=tinysrgb&w=300&h=300&dpr=1" alt="" />
+          </div>
+  
+          <div class="slide-image">
+            <img src="https://images.pexels.com/photos/1414042/pexels-photo-1414042.jpeg?auto=compress&cs=tinysrgb&w=300&h=300&dpr=1" alt="" />
+          </div>
+  
+          <div class="slide-image">
+            <img src="https://images.pexels.com/photos/1233414/pexels-photo-1233414.jpeg?auto=compress&cs=tinysrgb&w=300&h=300&dpr=1" alt="" />
+          </div>
+        </div>
+  
+        <div class="next">&gt;</i></div>
+    </div>
+
+    <div class="dotBox">
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+    </div>
+
+    <div class="about">
+        <section class=""></section>
+    </div>
+
+    <footer class="footer">
+        <div class="kontakt">
+            <h4>Kontakt os</h4>
+
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum ducimus, dolor veniam illum, ea repellat ipsum accusamus nam aliquid libero tempora amet quas odio?</p>
+
+            <div class="adresse">
+                <i class="fa-sharp fa-solid fa-location-dot"></i>
+                 <h5>Adresse</h5>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+
+            <div class="phone">
+                <i class="fa-solid fa-phone"></i>
+                <h5>Ring til os på</h5>
+                <p>+45 55281928</p>
+            </div>
+            
+            <div class="email">
+                <i class="fa-solid fa-envelope"></i>
+                <h5>Skrive til os på</h5>
+                <p>email1234@gmail.com</p>
+            </div>
+        </div>
+
+        <!-- kontakt form -->
+        <form action="./tak.html" class="contactForm" novalidate>
+            <h6>Send en besked</h6>
+
+			<div class="inputField">
+				<label class="inputField__label">
+					<input type="text" class="inputField__input" placeholder="Skrive din navn her" name="name" required>
+				</label>
+				<span class="inputField__feedback"></span>
+			</div>
+
+			<div class="inputField">
+				<label class="inputField__label">
+					<input type="email" class="inputField__input" placeholder="Skrive din email her" name="email" required>
+				</label>
+				<span class="inputField__feedback"></span>
+			</div>
+
+			<div class="inputField">
+				<label class="inputField__label">
+					<textarea class="inputField__text" placeholder="Skrive besked til os her" name="message"></textarea>
+				</label>
+				<span class="inputField__feedback"></span>
+			</div>
+			<button type="submit" class="submit__button"> <i class="fa-solid fa-envelope"></i> Send besked </button>
+		</form>
+    </footer>
+</body>
+</html>
